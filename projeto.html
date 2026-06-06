@@ -125,9 +125,23 @@
     @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
     .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
     .reveal.visible{opacity:1;transform:translateY(0)}
-  </style>
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 6vw;border-bottom:1px solid rgba(61,168,95,.15);position:sticky;top:0;background:rgba(13,43,26,.96);backdrop-filter:blur(8px);z-index:100}
+    .brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--bran);text-decoration:none}
+    .brand span{color:var(--vviv)}
+    .tnav{display:flex;gap:2rem}
+    .tnav a{font-size:.82rem;color:rgba(214,232,220,.55);text-decoration:none;letter-spacing:.05em;transition:color .2s}
+    .tnav a:hover,.tnav a.active{color:var(--vviv)}
+    </style>
 </head>
 <body>
+<header class="topbar">
+  <a href="projeto.html" class="brand">WebGIS <span>Mato Rico</span></a>
+  <nav class="tnav">
+    <a href="projeto.html" class="active">Início</a>
+    <a href="index.html">Mapa Interativo</a>
+    <a href="metadados.html">Metadados</a>
+  </nav>
+</header>
 
 <section class="hero">
   <div class="hero-content">

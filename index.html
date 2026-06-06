@@ -33,6 +33,18 @@
             background-color: rgba(255,255,255,.4) !important;
             padding: 2px !important;
         } 
+        
+    #back-btn{
+      position:fixed;top:12px;left:12px;z-index:9999;
+      background:rgba(13,43,26,.88);color:#d6e8dc;
+      border:1px solid rgba(61,168,95,.4);border-radius:4px;
+      padding:7px 14px;font-size:.78rem;letter-spacing:.08em;
+      text-decoration:none;font-family:sans-serif;
+      backdrop-filter:blur(8px);
+      transition:background .2s,color .2s;
+    }
+    #back-btn:hover{background:#2d6e47;color:#fff;}
+
         </style>
 
         <style>
@@ -46,6 +58,7 @@
         <title>WebGis de Mato Rico - PR</title>
     </head>
     <body>
+        <a id="back-btn" href="projeto.html">← Início</a>
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
